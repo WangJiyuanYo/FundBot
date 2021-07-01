@@ -84,6 +84,17 @@
 ]
 ```
 
+## 打包
+```shell
+# 安装maven 依赖
+mvn install 
+
+# 打包项目
+mvn package
+
+# 将打包好的jar包放入服务器中运行
+```
+
 ## 运行
 
 Windows下
