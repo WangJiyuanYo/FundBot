@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active: dev
+
+
+server:
+  port: 8080
+
+logging:
+  file:
+    path: logs/
+  pattern:
+    console: "%d - %msg%n"
