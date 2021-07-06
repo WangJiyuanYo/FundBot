@@ -1,17 +1,18 @@
 package icu.iseenu.fundbot.Utils;
 
 import icu.iseenu.fundbot.bot.WechatBot;
+import icu.iseenu.fundbot.common.FundsJSON;
 import icu.iseenu.fundbot.domain.Fund;
 import org.apache.commons.io.FileUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.File;
+import java.math.BigDecimal;
 import java.util.*;
 
 public class FileToJsonUtils {
 
-    //    private String filePath = "src/main/resources/";
     private String filePath = "";
 
     public FileToJsonUtils(String path) {
@@ -27,11 +28,14 @@ public class FileToJsonUtils {
         String content = FileUtils.readFileToString(file, "UTF-8");
         JSONArray arr = new JSONArray(content);
         List<Fund> res = new ArrayList<Fund>();
+
         for (int i = 0; i < arr.length(); i++) {
             Fund fund = new Fund();
-            fund.setCode((arr.getJSONObject(i)).getString("FundCode"));
-            fund.setHoldingPrice(Float.parseFloat((arr.getJSONObject(i)).getString("HoldingPrice")));
-            fund.setHoldShare((Float.parseFloat(arr.getJSONObject(i).getString("HoldShare"))));
+            fund.setCode(arr.getJSONObject(i).getString(FundsJSON.FundCode.toString()));
+            float hp = Float.valueOf(arr.getJSONObject(i).getString(FundsJSON.HoldingPrice.toString()));
+            fund.setHoldingPrice(new BigDecimal(hp));
+            float ps = Float.valueOf(arr.getJSONObject(i).getString(FundsJSON.PositionShare.toString()));
+            fund.setHoldShare(new BigDecimal(ps));
             res.add(fund);
         }
         return res;

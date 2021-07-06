@@ -2,6 +2,8 @@ package icu.iseenu.fundbot.domain;
 
 import lombok.Data;
 
+import java.math.BigDecimal;
+
 /**
  * {
  * ["fundcode"]=>"519983"           //基金代码
@@ -23,23 +25,21 @@ public class Fund {
     private String code = "";
 
     //持仓成本价
-    private float holdingPrice = 0.00f;
+    private BigDecimal holdingPrice;
 
     //持仓份额
-    private float holdShare = 0.00f;
+    private BigDecimal holdShare;
 
     //估算涨跌百分比
-//    private float gszzl = 0.00f;
+//    private BigDecimal gszzl = 0.00f;
 
     //估算值
-    private float gsz = 0.00f;
+    private BigDecimal gsz;
 
     //估算收益
-    private float gssy = 0.00f;
+    private BigDecimal gssy;
 
     //估算涨跌
-    private float gszzl = 0.00f;
+    private BigDecimal gszzl;
 
-    //收益率
-//    private float syl = 0.00f;
 }

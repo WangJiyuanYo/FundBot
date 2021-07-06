@@ -1,5 +1,6 @@
 package icu.iseenu.fundbot;
 
+import icu.iseenu.fundbot.Utils.GetUtils;
 import icu.iseenu.fundbot.crontab.Crontab;
 import org.junit.jupiter.api.Test;
 
@@ -22,6 +23,10 @@ class FundBotApplicationTests {
     void readFile() throws Exception {
         File file = new File("/test.txt");
         System.out.println(file.getName());
+    }
 
+    @Test
+    void testGetUrls() {
+//        System.out.printf(new GetUtils().getFundInfo());
     }
 }

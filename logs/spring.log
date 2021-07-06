@@ -1,22 +1,389 @@
-2021-06-30 14:37:11.069  INFO 22172 --- [main] icu.iseenu.fundbot.FundBotApplication    : Starting FundBotApplication using Java 1.8.0_181 on Anonymous with PID 22172 (C:\Users\jiyuan wang\IdeaProjects\FundBot\target\classes started by jiyuan wang in C:\Users\jiyuan wang\IdeaProjects\FundBot)
-2021-06-30 14:37:11.074  INFO 22172 --- [main] icu.iseenu.fundbot.FundBotApplication    : The following profiles are active: dev
-2021-06-30 14:37:11.610  INFO 22172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 18080 (http)
-2021-06-30 14:37:11.616  INFO 22172 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-06-30 14:37:11.617  INFO 22172 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
-2021-06-30 14:37:11.676  INFO 22172 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-06-30 14:37:11.677  INFO 22172 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 571 ms
-2021-06-30 14:37:11.874  INFO 22172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 18080 (http) with context path ''
-2021-06-30 14:37:11.882  INFO 22172 --- [main] icu.iseenu.fundbot.FundBotApplication    : Started FundBotApplication in 1.146 seconds (JVM running for 1.908)
-2021-06-30 14:37:18.426  WARN 28664 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+2021-07-06 09:37:00.009  WARN 14376 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
 
 Found multiple occurrences of org.json.JSONObject on the class path:
 
-	jar:file:/C:/Users/jiyuan%20wang/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
-	jar:file:/C:/Users/jiyuan%20wang/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
 
 You may wish to exclude one of them to ensure predictable runtime behavior
 
-2021-06-30 14:37:18.436  INFO 28664 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on Anonymous with PID 28664 (started by jiyuan wang in C:\Users\jiyuan wang\IdeaProjects\FundBot)
-2021-06-30 14:37:18.437  INFO 28664 --- [main] i.i.fundbot.FundBotApplicationTests      : The following profiles are active: dev
-2021-06-30 14:37:19.289  INFO 28664 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.063 seconds (JVM running for 1.687)
-2021-06-30 14:37:19.499  INFO 28664 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00
+2021-07-06 09:37:00.030  INFO 14376 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on DESKTOP-27L2KST with PID 14376 (started by wangjiyuan in C:\Users\wangjiyuan\IdeaProjects\FundBot)
+2021-07-06 09:37:00.031  INFO 14376 --- [main] i.i.fundbot.FundBotApplicationTests      : The following profiles are active: dev
+2021-07-06 09:37:00.970  INFO 14376 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.175 seconds (JVM running for 1.814)
+2021-07-06 09:37:01.132  INFO 14376 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00
+2021-07-06 09:37:56.972  WARN 7192 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-07-06 09:37:56.989  INFO 7192 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on DESKTOP-27L2KST with PID 7192 (started by wangjiyuan in C:\Users\wangjiyuan\IdeaProjects\FundBot)
+2021-07-06 09:37:56.989  INFO 7192 --- [main] i.i.fundbot.FundBotApplicationTests      : The following profiles are active: dev
+2021-07-06 09:37:57.876  INFO 7192 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.115 seconds (JVM running for 1.744)
+2021-07-06 09:37:58.004  INFO 7192 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00
+2021-07-06 09:46:30.187  WARN 7716 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-07-06 09:46:30.203  INFO 7716 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on DESKTOP-27L2KST with PID 7716 (started by wangjiyuan in C:\Users\wangjiyuan\IdeaProjects\FundBot)
+2021-07-06 09:46:30.204  INFO 7716 --- [main] i.i.fundbot.FundBotApplicationTests      : The following profiles are active: dev
+2021-07-06 09:46:31.070  INFO 7716 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.099 seconds (JVM running for 1.709)
+2021-07-06 09:46:31.193  INFO 7716 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00
+2021-07-06 10:05:21.570  WARN 4224 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-07-06 10:05:21.585  INFO 4224 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on DESKTOP-27L2KST with PID 4224 (started by wangjiyuan in C:\Users\wangjiyuan\IdeaProjects\FundBot)
+2021-07-06 10:05:21.586  INFO 4224 --- [main] i.i.fundbot.FundBotApplicationTests      : The following profiles are active: dev
+2021-07-06 10:05:22.450  INFO 4224 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.095 seconds (JVM running for 1.696)
+2021-07-06 10:05:30.023  WARN 13192 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-07-06 10:05:30.039  INFO 13192 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on DESKTOP-27L2KST with PID 13192 (started by wangjiyuan in C:\Users\wangjiyuan\IdeaProjects\FundBot)
+2021-07-06 10:05:30.040  INFO 13192 --- [main] i.i.fundbot.FundBotApplicationTests      : The following profiles are active: dev
+2021-07-06 10:05:30.908  INFO 13192 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.125 seconds (JVM running for 1.73)
+2021-07-06 10:05:31.038  INFO 13192 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00
+2021-07-06 10:07:11.474  WARN 6940 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-07-06 10:07:11.489  INFO 6940 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on DESKTOP-27L2KST with PID 6940 (started by wangjiyuan in C:\Users\wangjiyuan\IdeaProjects\FundBot)
+2021-07-06 10:07:11.489  INFO 6940 --- [main] i.i.fundbot.FundBotApplicationTests      : The following profiles are active: dev
+2021-07-06 10:07:12.345  INFO 6940 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.086 seconds (JVM running for 1.689)
+2021-07-06 10:07:12.464  INFO 6940 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00
+2021-07-06 10:08:44.637  WARN 20464 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-07-06 10:08:44.648  INFO 20464 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on DESKTOP-27L2KST with PID 20464 (started by wangjiyuan in C:\Users\wangjiyuan\IdeaProjects\FundBot)
+2021-07-06 10:08:44.654  INFO 20464 --- [main] i.i.fundbot.FundBotApplicationTests      : The following profiles are active: dev
+2021-07-06 10:08:45.555  INFO 20464 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.125 seconds (JVM running for 1.733)
+2021-07-06 10:08:45.679  INFO 20464 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00
+2021-07-06 10:13:17.281  WARN 13492 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-07-06 10:13:17.292  INFO 13492 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on DESKTOP-27L2KST with PID 13492 (started by wangjiyuan in C:\Users\wangjiyuan\IdeaProjects\FundBot)
+2021-07-06 10:13:17.292  INFO 13492 --- [main] i.i.fundbot.FundBotApplicationTests      : The following profiles are active: dev
+2021-07-06 10:13:18.156  INFO 13492 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.082 seconds (JVM running for 1.677)
+2021-07-06 10:13:18.281  INFO 13492 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00
+2021-07-06 10:17:49.670  WARN 2208 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-07-06 10:17:49.686  INFO 2208 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on DESKTOP-27L2KST with PID 2208 (started by wangjiyuan in C:\Users\wangjiyuan\IdeaProjects\FundBot)
+2021-07-06 10:17:49.686  INFO 2208 --- [main] i.i.fundbot.FundBotApplicationTests      : The following profiles are active: dev
+2021-07-06 10:17:50.558  INFO 2208 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.099 seconds (JVM running for 1.718)
+2021-07-06 10:17:50.680  INFO 2208 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00
+2021-07-06 10:19:31.351  WARN 1120 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-07-06 10:19:31.362  INFO 1120 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on DESKTOP-27L2KST with PID 1120 (started by wangjiyuan in C:\Users\wangjiyuan\IdeaProjects\FundBot)
+2021-07-06 10:19:31.363  INFO 1120 --- [main] i.i.fundbot.FundBotApplicationTests      : The following profiles are active: dev
+2021-07-06 10:19:32.227  INFO 1120 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.085 seconds (JVM running for 1.715)
+2021-07-06 10:19:32.345  INFO 1120 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00
+2021-07-06 10:22:20.986  WARN 18904 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-07-06 10:22:21.003  INFO 18904 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on DESKTOP-27L2KST with PID 18904 (started by wangjiyuan in C:\Users\wangjiyuan\IdeaProjects\FundBot)
+2021-07-06 10:22:21.003  INFO 18904 --- [main] i.i.fundbot.FundBotApplicationTests      : The following profiles are active: dev
+2021-07-06 10:22:21.874  INFO 18904 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.1 seconds (JVM running for 1.726)
+2021-07-06 10:22:21.997  INFO 18904 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00
+2021-07-06 10:23:03.188  WARN 6300 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-07-06 10:23:03.203  INFO 6300 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on DESKTOP-27L2KST with PID 6300 (started by wangjiyuan in C:\Users\wangjiyuan\IdeaProjects\FundBot)
+2021-07-06 10:23:03.203  INFO 6300 --- [main] i.i.fundbot.FundBotApplicationTests      : The following profiles are active: dev
+2021-07-06 10:23:04.072  INFO 6300 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.097 seconds (JVM running for 1.697)
+2021-07-06 10:23:04.194  INFO 6300 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00
+2021-07-06 10:24:31.278  WARN 5336 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-07-06 10:24:31.293  INFO 5336 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on DESKTOP-27L2KST with PID 5336 (started by wangjiyuan in C:\Users\wangjiyuan\IdeaProjects\FundBot)
+2021-07-06 10:24:31.294  INFO 5336 --- [main] i.i.fundbot.FundBotApplicationTests      : The following profiles are active: dev
+2021-07-06 10:24:32.162  INFO 5336 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.096 seconds (JVM running for 1.695)
+2021-07-06 10:24:32.290  INFO 5336 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00
+2021-07-06 10:24:54.457  WARN 19096 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-07-06 10:24:54.468  INFO 19096 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on DESKTOP-27L2KST with PID 19096 (started by wangjiyuan in C:\Users\wangjiyuan\IdeaProjects\FundBot)
+2021-07-06 10:24:54.473  INFO 19096 --- [main] i.i.fundbot.FundBotApplicationTests      : The following profiles are active: dev
+2021-07-06 10:24:55.350  INFO 19096 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.1 seconds (JVM running for 1.698)
+2021-07-06 10:24:55.474  INFO 19096 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00
+2021-07-06 10:25:28.159  WARN 19072 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-07-06 10:25:28.175  INFO 19072 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on DESKTOP-27L2KST with PID 19072 (started by wangjiyuan in C:\Users\wangjiyuan\IdeaProjects\FundBot)
+2021-07-06 10:25:28.175  INFO 19072 --- [main] i.i.fundbot.FundBotApplicationTests      : The following profiles are active: dev
+2021-07-06 10:25:29.033  INFO 19072 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.086 seconds (JVM running for 1.682)
+2021-07-06 10:25:29.162  INFO 19072 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00
+2021-07-06 10:26:14.066  WARN 2388 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-07-06 10:26:14.081  INFO 2388 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on DESKTOP-27L2KST with PID 2388 (started by wangjiyuan in C:\Users\wangjiyuan\IdeaProjects\FundBot)
+2021-07-06 10:26:14.082  INFO 2388 --- [main] i.i.fundbot.FundBotApplicationTests      : The following profiles are active: dev
+2021-07-06 10:26:14.936  INFO 2388 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.087 seconds (JVM running for 1.684)
+2021-07-06 10:26:15.067  INFO 2388 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00
+2021-07-06 10:27:36.645  WARN 17252 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-07-06 10:27:36.660  INFO 17252 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on DESKTOP-27L2KST with PID 17252 (started by wangjiyuan in C:\Users\wangjiyuan\IdeaProjects\FundBot)
+2021-07-06 10:27:36.660  INFO 17252 --- [main] i.i.fundbot.FundBotApplicationTests      : The following profiles are active: dev
+2021-07-06 10:27:37.522  INFO 17252 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.082 seconds (JVM running for 1.683)
+2021-07-06 10:27:37.643  INFO 17252 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00
+2021-07-06 10:28:34.229  WARN 19368 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-07-06 10:28:34.239  INFO 19368 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on DESKTOP-27L2KST with PID 19368 (started by wangjiyuan in C:\Users\wangjiyuan\IdeaProjects\FundBot)
+2021-07-06 10:28:34.240  INFO 19368 --- [main] i.i.fundbot.FundBotApplicationTests      : The following profiles are active: dev
+2021-07-06 10:28:35.099  INFO 19368 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.078 seconds (JVM running for 1.675)
+2021-07-06 10:28:35.225  INFO 19368 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00
+2021-07-06 10:32:37.678  WARN 17192 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-07-06 10:32:37.689  INFO 17192 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on DESKTOP-27L2KST with PID 17192 (started by wangjiyuan in C:\Users\wangjiyuan\IdeaProjects\FundBot)
+2021-07-06 10:32:37.690  INFO 17192 --- [main] i.i.fundbot.FundBotApplicationTests      : The following profiles are active: dev
+2021-07-06 10:32:38.566  INFO 17192 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.105 seconds (JVM running for 1.709)
+2021-07-06 10:32:38.690  INFO 17192 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00
+2021-07-06 10:33:04.633  WARN 11964 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-07-06 10:33:04.648  INFO 11964 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on DESKTOP-27L2KST with PID 11964 (started by wangjiyuan in C:\Users\wangjiyuan\IdeaProjects\FundBot)
+2021-07-06 10:33:04.649  INFO 11964 --- [main] i.i.fundbot.FundBotApplicationTests      : The following profiles are active: dev
+2021-07-06 10:33:05.509  INFO 11964 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.084 seconds (JVM running for 1.678)
+2021-07-06 10:33:05.632  INFO 11964 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00
+2021-07-06 10:35:10.461  WARN 2560 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-07-06 10:35:10.476  INFO 2560 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on DESKTOP-27L2KST with PID 2560 (started by wangjiyuan in C:\Users\wangjiyuan\IdeaProjects\FundBot)
+2021-07-06 10:35:10.476  INFO 2560 --- [main] i.i.fundbot.FundBotApplicationTests      : The following profiles are active: dev
+2021-07-06 10:35:11.402  INFO 2560 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.164 seconds (JVM running for 1.793)
+2021-07-06 10:35:11.534  INFO 2560 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00
+2021-07-06 10:35:39.115  WARN 18752 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-07-06 10:35:39.131  INFO 18752 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on DESKTOP-27L2KST with PID 18752 (started by wangjiyuan in C:\Users\wangjiyuan\IdeaProjects\FundBot)
+2021-07-06 10:35:39.131  INFO 18752 --- [main] i.i.fundbot.FundBotApplicationTests      : The following profiles are active: dev
+2021-07-06 10:35:39.996  INFO 18752 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.088 seconds (JVM running for 1.691)
+2021-07-06 10:35:40.123  INFO 18752 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00
+2021-07-06 10:37:03.223  WARN 19024 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-07-06 10:37:03.240  INFO 19024 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on DESKTOP-27L2KST with PID 19024 (started by wangjiyuan in C:\Users\wangjiyuan\IdeaProjects\FundBot)
+2021-07-06 10:37:03.240  INFO 19024 --- [main] i.i.fundbot.FundBotApplicationTests      : The following profiles are active: dev
+2021-07-06 10:37:04.123  INFO 19024 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.115 seconds (JVM running for 1.719)
+2021-07-06 10:37:04.252  INFO 19024 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00
+2021-07-06 10:37:30.375  WARN 20464 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-07-06 10:37:30.391  INFO 20464 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on DESKTOP-27L2KST with PID 20464 (started by wangjiyuan in C:\Users\wangjiyuan\IdeaProjects\FundBot)
+2021-07-06 10:37:30.391  INFO 20464 --- [main] i.i.fundbot.FundBotApplicationTests      : The following profiles are active: dev
+2021-07-06 10:37:31.274  INFO 20464 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.11 seconds (JVM running for 1.718)
+2021-07-06 10:37:31.404  INFO 20464 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00
+2021-07-06 10:37:55.988  WARN 9116 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-07-06 10:37:56.004  INFO 9116 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on DESKTOP-27L2KST with PID 9116 (started by wangjiyuan in C:\Users\wangjiyuan\IdeaProjects\FundBot)
+2021-07-06 10:37:56.004  INFO 9116 --- [main] i.i.fundbot.FundBotApplicationTests      : The following profiles are active: dev
+2021-07-06 10:37:56.867  INFO 9116 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.089 seconds (JVM running for 1.691)
+2021-07-06 10:37:56.993  INFO 9116 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00
+2021-07-06 10:44:57.469  WARN 16984 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-07-06 10:44:57.486  INFO 16984 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on DESKTOP-27L2KST with PID 16984 (started by wangjiyuan in C:\Users\wangjiyuan\IdeaProjects\FundBot)
+2021-07-06 10:44:57.487  INFO 16984 --- [main] i.i.fundbot.FundBotApplicationTests      : The following profiles are active: dev
+2021-07-06 10:44:58.372  INFO 16984 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.12 seconds (JVM running for 1.729)
+2021-07-06 10:44:58.498  INFO 16984 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00
+2021-07-06 10:46:01.960  WARN 6464 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-07-06 10:46:01.975  INFO 6464 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on DESKTOP-27L2KST with PID 6464 (started by wangjiyuan in C:\Users\wangjiyuan\IdeaProjects\FundBot)
+2021-07-06 10:46:01.975  INFO 6464 --- [main] i.i.fundbot.FundBotApplicationTests      : The following profiles are active: dev
+2021-07-06 10:46:02.840  INFO 6464 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.092 seconds (JVM running for 1.694)
+2021-07-06 10:46:02.961  INFO 6464 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00
+2021-07-06 10:46:45.285  WARN 3164 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-07-06 10:46:45.301  INFO 3164 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on DESKTOP-27L2KST with PID 3164 (started by wangjiyuan in C:\Users\wangjiyuan\IdeaProjects\FundBot)
+2021-07-06 10:46:45.301  INFO 3164 --- [main] i.i.fundbot.FundBotApplicationTests      : The following profiles are active: dev
+2021-07-06 10:46:46.186  INFO 3164 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.117 seconds (JVM running for 1.718)
+2021-07-06 10:46:46.313  INFO 3164 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00
+2021-07-06 10:48:48.842  WARN 14840 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-07-06 10:48:48.853  INFO 14840 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on DESKTOP-27L2KST with PID 14840 (started by wangjiyuan in C:\Users\wangjiyuan\IdeaProjects\FundBot)
+2021-07-06 10:48:48.859  INFO 14840 --- [main] i.i.fundbot.FundBotApplicationTests      : The following profiles are active: dev
+2021-07-06 10:48:49.748  INFO 14840 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.113 seconds (JVM running for 1.71)
+2021-07-06 10:48:49.881  INFO 14840 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00
+2021-07-06 10:50:41.078  WARN 18012 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/wangjiyuan/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-07-06 10:50:41.095  INFO 18012 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on DESKTOP-27L2KST with PID 18012 (started by wangjiyuan in C:\Users\wangjiyuan\IdeaProjects\FundBot)
+2021-07-06 10:50:41.095  INFO 18012 --- [main] i.i.fundbot.FundBotApplicationTests      : The following profiles are active: dev
+2021-07-06 10:50:41.975  INFO 18012 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.11 seconds (JVM running for 1.721)
+2021-07-06 10:50:42.106  INFO 18012 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00

@@ -1,4 +1,7 @@
 HELP.md
+bot_config/
+fund_file/
+logs/
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/

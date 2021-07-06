@@ -2,10 +2,12 @@ package icu.iseenu.fundbot.Utils;
 
 import icu.iseenu.fundbot.domain.Fund;
 import org.apache.commons.io.IOUtils;
+import org.jetbrains.annotations.NotNull;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.math.BigDecimal;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
@@ -14,7 +16,7 @@ public class GetUtils {
     private final static String CONTENT_TYPE = "application/json";
     private final static String FUND_URL = "http://fundgz.1234567.com.cn/js/";
 
-    public Fund getFundInfo(Fund fund) throws Exception {
+    public Fund getFundInfo(@NotNull Fund fund) throws Exception {
         String url = FUND_URL + fund.getCode() + ".js";
 
         URL obj = new URL(url);
@@ -41,9 +43,8 @@ public class GetUtils {
         //获取josn对应结果
         JSONObject jsonObject = new JSONObject(res);
         fund.setName(jsonObject.getString("name"));
-        String longres = jsonObject.getString("gszzl") + "f";
-        fund.setGszzl(Float.valueOf(longres));
-
+        String longres = jsonObject.getString("gszzl");
+        fund.setGszzl(BigDecimal.valueOf(Float.valueOf(longres)));
         return fund;
     }
 }
