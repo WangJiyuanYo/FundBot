@@ -1,6 +1,5 @@
 package icu.iseenu.fundbot.Utils;
 
-import icu.iseenu.fundbot.bot.WechatBot;
 import icu.iseenu.fundbot.common.FundsJSON;
 import icu.iseenu.fundbot.domain.Fund;
 import org.apache.commons.io.FileUtils;

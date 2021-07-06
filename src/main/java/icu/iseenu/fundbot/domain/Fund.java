@@ -42,4 +42,9 @@ public class Fund {
     //估算涨跌
     private BigDecimal gszzl;
 
+    //当日净值
+    private BigDecimal dwjz;
+
+    private BigDecimal totalRevenue;
+
 }

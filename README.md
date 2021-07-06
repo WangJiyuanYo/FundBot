@@ -16,7 +16,8 @@
 | ------------- | -------- | ------------------------------------------------------------ |
 | 2021年6月28日 | Alpha1.0 | 初步完成简单的计算和推送功能                                 |
 | 2021年6月28日 | Alpha2.0 | 修改推送的Bug  定时任务异常Bug 主动调用没有返回结果的诸多Bug |
-| 2021年6月29日 | Alpha3.0 | 修复收益 < 0.00时不推送的Bug                                 |
+| 2021年6月29日 | Alpha3.0 | 修复收益 < 0.00时不推送的Bug       
+|2021年7月6日   | Alpha1.1 | 代码重构 重写计算规则
 
 ### 项目计划
 
@@ -30,7 +31,7 @@
 
 >`bot_config`目录下存储的是推送机器人配置信息 （自定义未完善 ）
 >
->`fund_file`存储基金信息，存放个人用户基金的信息内容
+>`funds`存储基金信息，存放个人用户基金的信息内容
 
 ## 配置详解
 
@@ -40,9 +41,9 @@
 
 `FundCode`：基金编码
 
-`HoldingPrice`：持仓价格 浮点数最后需要加 f
+`HoldingPrice`：持仓价格 
 
-`HoldShare`：持仓金额 浮点数最后需要加 f
+`PositionShare`：持仓份额
 
 ---
 
@@ -54,8 +55,8 @@
 [
   {
     "FundCode": "001156",
-    "HoldingPrice": "2.6846f",
-    "HoldShare": "787.54f"
+    "HoldingPrice": "2.6846",
+    "PositionShare": "279.37"
   }
 ]
 ```
@@ -68,18 +69,18 @@
 [
   {
     "FundCode": "001156",
-    "HoldingPrice": "2.6846f",
-    "HoldShare": "787.54f"
+    "HoldingPrice": "2.6846",
+    "PositionShare": "279.37"
   },
   {
     "FundCode": "161725",
-    "HoldingPrice": "1.5017f",
-    "HoldShare": "99.25f"
+    "HoldingPrice": "1.5017",
+    "PositionShare": "66.59"
   },
   {
     "FundCode": "400015",
-    "HoldingPrice": "3.0196f",
-    "HoldShare": "496.87f"
+    "HoldingPrice": "3.2592",
+    "PositionShare": "223.37"
   }
 ]
 ```

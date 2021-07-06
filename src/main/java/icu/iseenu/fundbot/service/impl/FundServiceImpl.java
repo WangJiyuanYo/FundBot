@@ -35,12 +35,37 @@ public class FundServiceImpl implements FundService {
             Fund fund = new Fund();
             fund.setName("总收益");
             fund.setGssy(todayTotal.setScale(2, BigDecimal.ROUND_HALF_UP));
-            System.out.println(fund.getGssy());
             results.add(fund);
             String keyStatus = new FileToJsonUtils(JSONFilesIOC.BOTS.getPath()).getBotConfig();
-            if (keyStatus != null) {
-                return WechatBot.push(keyStatus, results);
+//            if (keyStatus != null && results != null) {
+//                return WechatBot.push(keyStatus, results);
+//            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
+    /**
+     * 总收益计算Methods
+     *
+     * @return
+     */
+    @Override
+    public boolean TotalRevenue() {
+        try {
+            List<Fund> funds = new FileToJsonUtils(JSONFilesIOC.FUNDS.getPath()).getTodayFundInfo();
+            if (funds == null) {
+                return false;
             }
+            List<Fund> results = get(funds);
+            BigDecimal totalRevenue = new BigDecimal(0.0);
+            for (Fund result : results) {
+                result.setTotalRevenue((result.getDwjz().subtract(result.getHoldingPrice())).multiply(result.getHoldShare()).setScale(2, BigDecimal.ROUND_HALF_UP));
+                totalRevenue = totalRevenue.add(result.getTotalRevenue()).setScale(2, BigDecimal.ROUND_HALF_UP);
+            }
+            String key = new FileToJsonUtils(JSONFilesIOC.BOTS.getPath()).getBotConfig();
+            return key != null ? WechatBot.push(key, results) : false;
         } catch (Exception e) {
             e.printStackTrace();
         }

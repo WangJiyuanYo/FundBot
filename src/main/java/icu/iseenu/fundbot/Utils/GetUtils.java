@@ -40,11 +40,14 @@ public class GetUtils {
         String res = message.replaceAll("[(^)]+", "");
         res = res.replaceAll("jsonpgz", "");
 
+
         //获取josn对应结果
         JSONObject jsonObject = new JSONObject(res);
         fund.setName(jsonObject.getString("name"));
         String longres = jsonObject.getString("gszzl");
         fund.setGszzl(BigDecimal.valueOf(Float.valueOf(longres)));
+        String dwjz = jsonObject.getString("dwjz");
+        fund.setDwjz(BigDecimal.valueOf(Float.valueOf(dwjz)));
         return fund;
     }
 }

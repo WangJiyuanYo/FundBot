@@ -23,7 +23,7 @@ public class WechatBot {
 
         String markdown = "# 收益提示 \n";
         for (Fund fund : funds) {
-            markdown += ">" + fund.getName() + " " + fund.getGssy() + "\n";
+            markdown += ">" + fund.getName() + " " + fund.getGssy() + " 持有收益：" + fund.getTotalRevenue() +"\n";
         }
 
         //传输的数据
@@ -42,4 +42,5 @@ public class WechatBot {
         JSONObject responseData = new JSONObject(response.body().string());
         return JsonResponse.checkResult(responseData);
     }
+
 }

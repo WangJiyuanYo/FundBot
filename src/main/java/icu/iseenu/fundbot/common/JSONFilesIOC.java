@@ -1,13 +1,14 @@
 package icu.iseenu.fundbot.common;
 
-
+/**
+ * 文件路径映射
+ */
 public enum JSONFilesIOC {
 
     FUNDS("fund_file/funds.json"),
     BOTS("bot_config/bot.json");
 
     private String path;
-
 
     JSONFilesIOC(String filePath) {
         this.path = filePath;
