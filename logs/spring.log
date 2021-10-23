@@ -113,3 +113,33 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2021-10-23 17:48:48.172  INFO 20064 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2021-10-23 17:48:48.173  INFO 20064 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2021-10-23 17:48:48.183  WARN 20064 --- [http-nio-8080-exec-1] i.i.f.Utils.WeekdayAndHolidayCheck       : Today is Sat Oct 23 17:48:48 CST 2021 it's Not work
+2021-10-23 17:54:50.726  WARN 7228 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/jiyuan%20wang/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/jiyuan%20wang/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-10-23 17:54:50.736  INFO 7228 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on YuanComputer with PID 7228 (started by jiyuan wang in D:\Github\FundBot)
+2021-10-23 17:54:50.737  INFO 7228 --- [main] i.i.fundbot.FundBotApplicationTests      : No active profile set, falling back to default profiles: default
+2021-10-23 17:54:51.615  INFO 7228 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.07 seconds (JVM running for 1.642)
+2021-10-23 17:54:53.297  INFO 7228 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00
+2021-10-23 17:54:53.299  WARN 7228 --- [main] i.i.f.Utils.WeekdayAndHolidayCheck       : Today is Sat Oct 23 17:54:53 CST 2021 it's Not work
+2021-10-23 17:54:53.299  INFO 7228 --- [main] icu.iseenu.fundbot.crontab.Crontab       : 非工作时间不执行
+2021-10-23 17:55:00.438  WARN 22184 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/jiyuan%20wang/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/jiyuan%20wang/.m2/repository/org/json/json/20210307/json-20210307.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-10-23 17:55:00.453  INFO 22184 --- [main] i.i.fundbot.FundBotApplicationTests      : Starting FundBotApplicationTests using Java 1.8.0_181 on YuanComputer with PID 22184 (started by jiyuan wang in D:\Github\FundBot)
+2021-10-23 17:55:00.456  INFO 22184 --- [main] i.i.fundbot.FundBotApplicationTests      : No active profile set, falling back to default profiles: default
+2021-10-23 17:55:01.313  INFO 22184 --- [main] i.i.fundbot.FundBotApplicationTests      : Started FundBotApplicationTests in 1.068 seconds (JVM running for 1.64)
+2021-10-23 17:55:02.830  INFO 22184 --- [main] icu.iseenu.fundbot.crontab.Crontab       : start job ; 21:00
+2021-10-23 17:55:02.831  WARN 22184 --- [main] i.i.f.Utils.WeekdayAndHolidayCheck       : Today is Sat Oct 23 17:55:02 CST 2021 it's Not work
+2021-10-23 17:55:02.831  INFO 22184 --- [main] icu.iseenu.fundbot.crontab.Crontab       : 非工作时间不执行
