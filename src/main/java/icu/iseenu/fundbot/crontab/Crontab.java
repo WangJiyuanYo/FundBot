@@ -2,6 +2,7 @@ package icu.iseenu.fundbot.crontab;
 
 
 import icu.iseenu.fundbot.Utils.WeekdayAndHolidayCheck;
+import icu.iseenu.fundbot.common.Result;
 import icu.iseenu.fundbot.service.impl.FundServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -40,14 +41,13 @@ public class Crontab {
         pushInfo("start job ; 23:00");
     }
 
-    private void pushInfo(String time) {
+    private Result pushInfo(String time) {
         log.info(time);
         if (WeekdayAndHolidayCheck.checkWeekdayAndHoliday()) {
-            boolean res = fundService.TotalRevenue();
-            log.info("执行结果 " + res);
+            return fundService.TotalRevenue();
         } else {
             log.info("非工作时间不执行");
+            return Result.error("非工作时间不执行");
         }
-
     }
 }

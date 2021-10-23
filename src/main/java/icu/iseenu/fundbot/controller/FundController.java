@@ -2,6 +2,7 @@ package icu.iseenu.fundbot.controller;
 
 
 import icu.iseenu.fundbot.Utils.WeekdayAndHolidayCheck;
+import icu.iseenu.fundbot.common.Result;
 import icu.iseenu.fundbot.crontab.Crontab;
 import icu.iseenu.fundbot.service.FundService;
 import lombok.extern.slf4j.Slf4j;
@@ -30,11 +31,11 @@ public class FundController {
     private FundService fundService;
 
     @GetMapping("/gssy")
-    public boolean run() {
+    public Result run() {
         if (WeekdayAndHolidayCheck.checkWeekdayAndHoliday()) {
             return fundService.getTodayInfo();
         }
-        return false;
+        return Result.error("非工作日取消执行");
     }
 
 }

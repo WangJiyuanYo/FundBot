@@ -94,6 +94,11 @@
 ]
 ```
 
+## 定时任务配置
+
+1. 定时在crontab.Crontab的java文件中配置自己的Methods
+2. 也可以自行使用OS的定时任务脚本
+
 ## 打包
 
 ```shell
@@ -122,7 +127,7 @@ taskkill /F /pid [pid]
 Linux下
 
 ```shell
-nohup java -jar FundBot.jarnohup &
+nohup java -jar FundBot.jar &
 
 #停止
 lsof -i:8080

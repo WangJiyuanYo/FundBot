@@ -1,9 +1,11 @@
 package icu.iseenu.fundbot.service;
 
 
-public interface FundService {
-    boolean getTodayInfo();
+import icu.iseenu.fundbot.common.Result;
 
-    boolean TotalRevenue();
+public interface FundService {
+    Result getTodayInfo();
+
+    Result TotalRevenue();
 }
 

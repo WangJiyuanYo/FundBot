@@ -29,7 +29,7 @@ public class WeekdayAndHolidayCheck {
         Calendar cal = Calendar.getInstance();
         cal.setTime(today);
         if (cal.get(Calendar.DAY_OF_WEEK) != Calendar.SATURDAY || cal.get(Calendar.DAY_OF_WEEK) != Calendar.SUNDAY) {
-            log.warn("Today is " + today + "it's Not work");
+            log.warn("Today is " + today + " it's Not work");
             return false;
         }
         try {
@@ -37,7 +37,7 @@ public class WeekdayAndHolidayCheck {
         } catch (Exception e) {
             log.error(e.getMessage());
         }
-        log.info("Today is " + today + " it's work ?" + isWork);
+        log.info("Today is " + today + " it's work ? " + isWork);
         return isWork;
 
     }

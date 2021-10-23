@@ -4,6 +4,7 @@ import icu.iseenu.fundbot.Utils.FileToJsonUtils;
 import icu.iseenu.fundbot.Utils.GetUtils;
 import icu.iseenu.fundbot.bot.WechatBot;
 import icu.iseenu.fundbot.common.JSONFilesIOC;
+import icu.iseenu.fundbot.common.Result;
 import icu.iseenu.fundbot.domain.Fund;
 import icu.iseenu.fundbot.service.FundService;
 import org.springframework.stereotype.Service;
@@ -21,11 +22,11 @@ public class FundServiceImpl implements FundService {
      * @return true : false ? 推送成功后的返回结果
      */
     @Override
-    public boolean getTodayInfo() {
+    public Result getTodayInfo() {
         try {
             List<Fund> funds = new FileToJsonUtils(JSONFilesIOC.FUNDS.getPath()).getTodayFundInfo();
             if (funds == null) {
-                return false;
+                return Result.error("Getting Funds Is Empty");
             }
             List<Fund> results = get(funds);
             BigDecimal todayTotal = new BigDecimal(0.00);
@@ -44,7 +45,7 @@ public class FundServiceImpl implements FundService {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return false;
+        return Result.error();
     }
 
     /**
@@ -53,11 +54,11 @@ public class FundServiceImpl implements FundService {
      * @return
      */
     @Override
-    public boolean TotalRevenue() {
+    public Result TotalRevenue() {
         try {
             List<Fund> funds = new FileToJsonUtils(JSONFilesIOC.FUNDS.getPath()).getTodayFundInfo();
             if (Objects.isNull(funds)) {
-                return false;
+                return Result.error("Getting Funds Is Empty");
             }
             List<Fund> results = get(funds);
             BigDecimal totalRevenue = new BigDecimal(0.0);
@@ -70,11 +71,11 @@ public class FundServiceImpl implements FundService {
                         .setScale(2, BigDecimal.ROUND_HALF_UP);
             }
             String key = new FileToJsonUtils(JSONFilesIOC.BOTS.getPath()).getBotConfig();
-            return key != null && WechatBot.push(key, results);
+            return WechatBot.push(key, results);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return false;
+        return Result.error();
     }
 
 
