@@ -6,7 +6,8 @@ package icu.iseenu.fundbot.common;
 public enum JSONFilesIOC {
 
     FUNDS("fund_file/funds.json"),
-    BOTS("bot_config/bot.json");
+    BOTS("bot_config/bot.json"),
+    YEARS("years/");
 
     private String path;
 

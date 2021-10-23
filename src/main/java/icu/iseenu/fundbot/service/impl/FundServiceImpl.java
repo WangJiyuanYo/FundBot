@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.util.List;
+import java.util.Objects;
 
 @Service
 public class FundServiceImpl implements FundService {
@@ -37,9 +38,9 @@ public class FundServiceImpl implements FundService {
             fund.setGssy(todayTotal.setScale(2, BigDecimal.ROUND_HALF_UP));
             results.add(fund);
             String keyStatus = new FileToJsonUtils(JSONFilesIOC.BOTS.getPath()).getBotConfig();
-//            if (keyStatus != null && results != null) {
-//                return WechatBot.push(keyStatus, results);
-//            }
+            if (keyStatus != null && results != null) {
+                return WechatBot.push(keyStatus, results);
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -55,17 +56,21 @@ public class FundServiceImpl implements FundService {
     public boolean TotalRevenue() {
         try {
             List<Fund> funds = new FileToJsonUtils(JSONFilesIOC.FUNDS.getPath()).getTodayFundInfo();
-            if (funds == null) {
+            if (Objects.isNull(funds)) {
                 return false;
             }
             List<Fund> results = get(funds);
             BigDecimal totalRevenue = new BigDecimal(0.0);
             for (Fund result : results) {
-                result.setTotalRevenue((result.getDwjz().subtract(result.getHoldingPrice())).multiply(result.getHoldShare()).setScale(2, BigDecimal.ROUND_HALF_UP));
-                totalRevenue = totalRevenue.add(result.getTotalRevenue()).setScale(2, BigDecimal.ROUND_HALF_UP);
+                result.setTotalRevenue((result.getDwjz()
+                        .subtract(result.getHoldingPrice()))
+                        .multiply(result.getHoldShare())
+                        .setScale(2, BigDecimal.ROUND_HALF_UP));
+                totalRevenue = totalRevenue.add(result.getTotalRevenue())
+                        .setScale(2, BigDecimal.ROUND_HALF_UP);
             }
             String key = new FileToJsonUtils(JSONFilesIOC.BOTS.getPath()).getBotConfig();
-            return key != null ? WechatBot.push(key, results) : false;
+            return key != null && WechatBot.push(key, results);
         } catch (Exception e) {
             e.printStackTrace();
         }

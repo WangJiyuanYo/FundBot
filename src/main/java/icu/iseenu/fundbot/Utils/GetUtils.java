@@ -43,6 +43,7 @@ public class GetUtils {
 
         //获取josn对应结果
         JSONObject jsonObject = new JSONObject(res);
+        System.out.println(jsonObject);
         fund.setName(jsonObject.getString("name"));
         String longres = jsonObject.getString("gszzl");
         fund.setGszzl(BigDecimal.valueOf(Float.valueOf(longres)));

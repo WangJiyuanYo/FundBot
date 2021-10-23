@@ -1,15 +1,20 @@
 package icu.iseenu.fundbot.Utils;
 
 import icu.iseenu.fundbot.common.FundsJSON;
+import icu.iseenu.fundbot.common.JSONFilesIOC;
 import icu.iseenu.fundbot.domain.Fund;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.FileUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
+import org.springframework.stereotype.Service;
 
 import java.io.File;
+import java.io.IOException;
 import java.math.BigDecimal;
 import java.util.*;
 
+@Slf4j
 public class FileToJsonUtils {
 
     private String filePath = "";
@@ -27,7 +32,6 @@ public class FileToJsonUtils {
         String content = FileUtils.readFileToString(file, "UTF-8");
         JSONArray arr = new JSONArray(content);
         List<Fund> res = new ArrayList<Fund>();
-
         for (int i = 0; i < arr.length(); i++) {
             Fund fund = new Fund();
             fund.setCode(arr.getJSONObject(i).getString(FundsJSON.FundCode.toString()));
@@ -47,6 +51,20 @@ public class FileToJsonUtils {
         JSONObject arr = new JSONObject(content);
         String wechatKey = arr.getJSONObject("wechat").getString("key");
         return wechatKey;
+    }
+
+    //获取假日信息
+    public JSONArray getHolidayInfo() {
+        File file = new File(filePath);
+        String content = null;
+        try {
+            content = FileUtils.readFileToString(file, "UTF-8");
+            JSONObject arr = new JSONObject(content);
+            return arr.getJSONArray("days");
+        } catch (IOException e) {
+            log.error(e.getMessage());
+        }
+        return null;
     }
 
 

@@ -11,9 +11,9 @@ public class WechatBot {
 
     private static final String BOT_URL = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=";
 
-    private final static String USER_AGENT = "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:22.0) Gecko/20100101 Firefox/22.0";
-
-    private final static String CONTENT_TYPE = "application/json";
+//    private final static String USER_AGENT = "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:22.0) Gecko/20100101 Firefox/22.0";
+//
+//    private final static String CONTENT_TYPE = "application/json";
 
     private static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
     private static OkHttpClient client = new OkHttpClient();
@@ -21,11 +21,16 @@ public class WechatBot {
     public static boolean push(String key, List<Fund> funds) throws Exception {
         String url = BOT_URL + key;
 
-        String markdown = "# 收益提示 \n";
+        StringBuilder markdown = new StringBuilder();
+        markdown.append("# 收益提示 \n");
         for (Fund fund : funds) {
-            markdown += ">" + fund.getName() + " " + fund.getGssy() + " 持有收益：" + fund.getTotalRevenue() +"\n";
+            markdown.append(">").
+                    append(fund.getName())
+                    .append(fund.getGssy())
+                    .append(" 持有收益 ")
+                    .append(fund.getTotalRevenue())
+                    .append("\n");
         }
-
         //传输的数据
         JSONObject data = new JSONObject();
         //context 字段

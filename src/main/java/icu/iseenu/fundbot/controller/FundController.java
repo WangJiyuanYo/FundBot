@@ -1,6 +1,8 @@
 package icu.iseenu.fundbot.controller;
 
 
+import icu.iseenu.fundbot.Utils.WeekdayAndHolidayCheck;
+import icu.iseenu.fundbot.crontab.Crontab;
 import icu.iseenu.fundbot.service.FundService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,9 +31,10 @@ public class FundController {
 
     @GetMapping("/gssy")
     public boolean run() {
-        log.info("Use Controller ");
-        System.out.println(fundService);
-        return fundService.getTodayInfo();
+        if (WeekdayAndHolidayCheck.checkWeekdayAndHoliday()) {
+            return fundService.getTodayInfo();
+        }
+        return false;
     }
 
 }
